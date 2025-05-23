@@ -1,0 +1,146 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(202, 181, 181);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+h2{
+    padding: 20px;
+    text-align: center;
+    color: #444;
+}
+h3{
+    padding: 10px 0;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+
+.body-container{
+    display: flex; 
+    justify-content: center;
+    gap: 40px; 
+    margin: 20px auto;
+    max-width: 1200px; 
+    flex-wrap: wrap; 
+}
+
+.user-manager-section, .task-manager-section{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1; 
+    min-width: 350px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-group { 
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="number"] {
+    flex: 1; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+button {
+    background: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.display-area {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto; 
+}
+
+.display-area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.display-area li {
+    background: #fff;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.display-area li span {
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 768px) {
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .user-manager-section, .task-manager-section {
+        min-width: unset;
+        width: 95%; 
+    }
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-group input, .input-group button {
+        width: 100%;
+        min-width: unset;
+    }
+}

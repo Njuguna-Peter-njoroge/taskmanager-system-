@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Management System</h1>
+
+    <div class="body-container">
+        <div class="user-manager-section"> <div class="user-details">
+                <h2>User Manager</h2>
+                <div class="form-section"> <h3>Create User</h3>
+                    <div class="input-group">
+                        <input type="text" id="createUserName" placeholder="User Name">
+                        <input type="email" id="createUserEmail" placeholder="User Email">
+                        <button id="createUserBtn">Create User</button>
+                    </div>
+
+                 
+
+                    <h3>Delete User </h3>
+                    <div class="input-group">
+                        <input type="number" id="deleteUserId" placeholder="Enter user ID">
+                        <button id="deleteUserBtn">Delete User</button>
+                    </div>
+
+                    <h3>Assign Task to User</h3>
+                    <div class="input-group">
+                        <input type="number" id="assignTaskId" placeholder="Task ID">
+                        <input type="number" id="assignUserId" placeholder="User ID">
+                        <button id="assignTaskBtn">Assign Task</button>
+                    </div>
+                </div>
+
+                <div class="display-area">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="task-manager-section"> <div class="task-management">
+                <h2>Task Manager</h2>
+
+                <div class="form-section"> <h3>Create Task</h3>
+                    <div class="input-group">
+                        <input type="text" id="createTaskTitle" placeholder="Task Title">
+                        <input type="text" id="createTaskDescription" placeholder="Task Description">
+                        <button id="createTaskBtn">Create Task</button>
+                    </div>
+
+                    <h3>Unassign Task</h3>
+                    <div class="input-group">
+                        <input type="number" id="unassignTaskId" placeholder="Task ID">
+                        <button id="unassignTaskBtn">Unassign Task</button>
+                    </div>
+
+                    <h3>Delete Task by ID</h3>
+                    <div class="input-group">
+                        <input type="number" id="deleteTaskId" placeholder="Task ID to delete">
+                        <button id="deleteTaskBtn">Delete Task</button>
+                    </div>
+                </div>
+
+                <div class="display-area">
+                    <h3>All Tasks</h3>
+                    <ul id="taskList">
+                        </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../dist/index.js"></script>
+</body>
+</html>
